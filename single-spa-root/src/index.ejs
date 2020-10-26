@@ -70,6 +70,15 @@
         }
       }
     </script>
+    <% } else { %>
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
+          "@mavis/root-config": "https://microfrontend-demo.netlify.app/mavis-root-config.js"
+        }
+      }
+    </script>
     <% } %>
 
     <!--
